@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Home from '../pages/Home'
 import Products from '../pages/Products'
 import Contact from '../pages/Contact'
@@ -9,11 +9,11 @@ import routes from '../constants/routes.json'
 const Main = () => {
   return (
     <MainWrapper>
-      <Switch>
+      <Routes>
         <Route exact path={routes.HOME} component={Home} />
         <Route exact path={routes.PRODUCTS} component={Products} />
         <Route exact path={routes.CONTACT}component={Contact} />
-      </Switch>
+      </Routes>
     </MainWrapper>
   )
 }
