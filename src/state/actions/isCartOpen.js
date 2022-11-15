@@ -1,9 +1,15 @@
-import React, { Component } from 'react'
+import { OPEN_CART, CLOSE_CART } from '../../constants/actionTypes'
 
-export default class isCartOpen extends Component {
-  render() {
-    return (
-      <div>isCartOpen</div>
-    )
+const openCart = () => {
+  return {
+    type: OPEN_CART,
   }
 }
+
+const closeCart = () => {
+  return {
+    type: CLOSE_CART,
+  }
+}
+
+export { openCart, closeCart }

@@ -1,9 +1,5 @@
-import React, { Component } from 'react'
+import { openCart, closeCart } from './isCartOpen'
+import { addToCart, removeFromCart } from './cart'
+import { setProducts } from './products'
 
-export default class index extends Component {
-  render() {
-    return (
-      <div>index</div>
-    )
-  }
-}
+export { openCart, closeCart, addToCart, removeFromCart, setProducts }

@@ -1,9 +1,17 @@
-import React, { Component } from 'react'
+import { ADD_TO_CART, REMOVE_FROM_CART } from '../../constants/actionTypes'
 
-export default class cart extends Component {
-  render() {
-    return (
-      <div>cart</div>
-    )
+const addToCart = (product) => {
+  return {
+    type: ADD_TO_CART,
+    payload: product,
   }
 }
+
+const removeFromCart = (product) => {
+  return {
+    type: REMOVE_FROM_CART,
+    payload: product,
+  }
+}
+
+export { addToCart, removeFromCart }

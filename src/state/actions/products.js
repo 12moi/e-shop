@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import { SET_PRODUCTS } from '../../constants/actionTypes'
 
-export default class products extends Component {
-  render() {
-    return (
-      <div>products</div>
-    )
+const setProducts = (products) => {
+  return {
+    type: SET_PRODUCTS,
+    payload: products,
   }
 }
 
+export { setProducts }
