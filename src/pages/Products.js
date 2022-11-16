@@ -11,9 +11,11 @@ const Products = () => {
 
   useEffect(() => {
     loadProducts()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+   
+  // eslint-disable-next-line no-use-before-define
+  }, [loadProducts])
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const loadProducts = async () => {
     dispatch(setProducts(filterProducts(await fetchProducts())))
   }
