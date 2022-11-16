@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-// import homepageImage from '../assets/images/homepage-image.png'
-// import underline from '../assets/images/underline.png'
+ import homepageImage from '../assets/images/homepage-image.png'
+ import underline from '../assets/images/underline.png'
 import Button from '../components/elements/Button'
 import routes from '../constants/routes.json'
 
@@ -12,7 +12,7 @@ const Home = () => {
       <Message>
         <SmallMessage>Best online store of the year</SmallMessage>
         <BigMessage>We don't do fashion, we are fashion</BigMessage>
-        {/* <Underline src={underline} alt="underline image" /> */}
+        <Underline src={underline} alt="underline image" /> 
         <Link to={routes.PRODUCTS}>
           <Button
             content="Shop now"
@@ -23,7 +23,7 @@ const Home = () => {
           ></Button>
         </Link>
       </Message>
-      {/* <Image src={homepageImage} alt="people"></Image> */}
+      <Image src={homepageImage} alt="people"></Image> 
     </HomeWrapper>
   )
 }

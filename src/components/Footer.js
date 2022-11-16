@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { FaGithub } from 'react-icons/fa'
 import { useLocation } from 'react-router-dom'
-// import backgroundWave from '../assets/images/background-wave.png'
+import backgroundWave from '../assets/images/background-wave.png'
 import routes from '../constants/routes.json'
 
 const Footer = () => {
@@ -18,9 +18,9 @@ const Footer = () => {
       >
         <FaGithub />
       </GithubLink>
-      {/* {location.pathname !== routes.PRODUCTS && ( */}
-        {/* // <BackgroundWave src={backgroundWave} alt="background image" /> */}
-      // 
+      {location.pathname !== routes.PRODUCTS && (
+        <BackgroundWave src={backgroundWave} alt="background image" />
+      )}
     </FooterWrapper>
   )
 }

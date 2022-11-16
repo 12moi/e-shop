@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <ContactWrapper>
       <SocialMedia>
-        <SocialLink href="https://github.com/michalosman" target="_blank">
+        <SocialLink href="https://github.com/12moi" target="_blank">
           <FaGithub />
         </SocialLink>
         <SocialLink
@@ -42,7 +42,7 @@ const Contact = () => {
       </SocialMedia>
       <ContactInfo>
         <p>FakeStore</p>
-        <p>Rodeo Drive 42, Los Angeles USA</p>
+        <p>Nairobi, Kenya</p>
       </ContactInfo>
     </ContactWrapper>
   )
